@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="HeaderCell" id="KGk-i7-Jjw" customClass="HeaderCell" customModule="ProductDetailsDemo" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Uza-5E-Nuy">
+                        <rect key="frame" x="5" y="5" width="310" height="34"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="rkz-Ce-hzQ">
+                                <rect key="frame" x="0.0" y="0.0" width="155" height="34"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QUd-vv-F8o">
+                                        <rect key="frame" x="0.0" y="0.0" width="155" height="31"/>
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Description">
+                                            <color key="titleColor" systemColor="systemYellowColor"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="descriptionBtnDidTapped:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="KVz-MD-Vn0"/>
+                                        </connections>
+                                    </button>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bGq-Yb-YKn">
+                                        <rect key="frame" x="0.0" y="33" width="155" height="1"/>
+                                        <color key="backgroundColor" systemColor="systemYellowColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="1" id="fle-gE-dFU"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="bGq-Yb-YKn" secondAttribute="trailing" id="bvT-2w-Obc"/>
+                                    <constraint firstItem="bGq-Yb-YKn" firstAttribute="leading" secondItem="rkz-Ce-hzQ" secondAttribute="leading" id="pFX-nT-Isv"/>
+                                </constraints>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="eEU-Bq-oUc">
+                                <rect key="frame" x="155" y="0.0" width="155" height="34"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dd9-CD-rkP">
+                                        <rect key="frame" x="0.0" y="0.0" width="155" height="31"/>
+                                        <state key="normal" title="Reviews">
+                                            <color key="titleColor" red="0.6705882352941176" green="0.70588235294117641" blue="0.74117647058823533" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="reviewBtnDidTapped:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="D5p-Mm-iAX"/>
+                                        </connections>
+                                    </button>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="93Q-zU-ZPt">
+                                        <rect key="frame" x="0.0" y="33" width="155" height="1"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="1" id="HBC-yS-aA3"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="93Q-zU-ZPt" firstAttribute="leading" secondItem="eEU-Bq-oUc" secondAttribute="leading" id="afI-NU-Thu"/>
+                                    <constraint firstAttribute="trailing" secondItem="93Q-zU-ZPt" secondAttribute="trailing" id="zsQ-bt-bz0"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                    </stackView>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="Uza-5E-Nuy" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="5" id="01x-o5-whO"/>
+                    <constraint firstItem="Uza-5E-Nuy" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="cHX-lO-o9i"/>
+                    <constraint firstAttribute="bottom" secondItem="Uza-5E-Nuy" secondAttribute="bottom" constant="5" id="cRX-p5-ilT"/>
+                    <constraint firstAttribute="trailing" secondItem="Uza-5E-Nuy" secondAttribute="trailing" constant="5" id="jlK-68-zv0"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="descriptionBtn" destination="QUd-vv-F8o" id="0kI-Co-hD5"/>
+                <outlet property="descriptionProgress" destination="bGq-Yb-YKn" id="asB-uZ-yWG"/>
+                <outlet property="reviewBtn" destination="Dd9-CD-rkP" id="LQY-bd-AjH"/>
+                <outlet property="reviewProgress" destination="93Q-zU-ZPt" id="11G-Sn-8UM"/>
+            </connections>
+            <point key="canvasLocation" x="34.782608695652179" y="96.428571428571431"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
