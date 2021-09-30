@@ -15,6 +15,7 @@
 		A749E28A2680D8AA00D47FA3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A749E2882680D8AA00D47FA3 /* Main.storyboard */; };
 		A749E28C2680D8AF00D47FA3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A749E28B2680D8AF00D47FA3 /* Assets.xcassets */; };
 		A749E28F2680D8AF00D47FA3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A749E28D2680D8AF00D47FA3 /* LaunchScreen.storyboard */; };
+		A74B974B2704DBA7001F829F /* KolodaVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A74B974A2704DBA7001F829F /* KolodaVC.swift */; };
 		A75FE46C26A2ED59002AC5C2 /* RelatedProuctCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A75FE46A26A2ED59002AC5C2 /* RelatedProuctCell.swift */; };
 		A75FE46D26A2ED59002AC5C2 /* RelatedProuctCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A75FE46B26A2ED59002AC5C2 /* RelatedProuctCell.xib */; };
 		A7B2942A268BE27B0048FCCC /* HeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7B29428268BE27B0048FCCC /* HeaderCell.swift */; };
@@ -40,6 +41,7 @@
 		A749E28B2680D8AF00D47FA3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A749E28E2680D8AF00D47FA3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A749E2902680D8AF00D47FA3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A74B974A2704DBA7001F829F /* KolodaVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KolodaVC.swift; sourceTree = "<group>"; };
 		A75FE46A26A2ED59002AC5C2 /* RelatedProuctCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RelatedProuctCell.swift; sourceTree = "<group>"; };
 		A75FE46B26A2ED59002AC5C2 /* RelatedProuctCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RelatedProuctCell.xib; sourceTree = "<group>"; };
 		A7B29428268BE27B0048FCCC /* HeaderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderCell.swift; sourceTree = "<group>"; };
@@ -106,6 +108,7 @@
 		A749E2812680D8AA00D47FA3 /* ProductDetailsDemo */ = {
 			isa = PBXGroup;
 			children = (
+				A74B97452704DB4A001F829F /* KolodaTest */,
 				A7BC6A272702580D0082297C /* ReviewCell */,
 				A7BC6A222701FFA20082297C /* DescriptionCell */,
 				A7BC6A1D2701F55F0082297C /* CategoryCell */,
@@ -121,6 +124,14 @@
 				A749E2902680D8AF00D47FA3 /* Info.plist */,
 			);
 			path = ProductDetailsDemo;
+			sourceTree = "<group>";
+		};
+		A74B97452704DB4A001F829F /* KolodaTest */ = {
+			isa = PBXGroup;
+			children = (
+				A74B974A2704DBA7001F829F /* KolodaVC.swift */,
+			);
+			path = KolodaTest;
 			sourceTree = "<group>";
 		};
 		A7B29427268BE1C70048FCCC /* SectionHeader */ = {
@@ -311,6 +322,7 @@
 				A7BC6A252701FFCA0082297C /* DescriptionCell.swift in Sources */,
 				A749E2852680D8AA00D47FA3 /* SceneDelegate.swift in Sources */,
 				A7BC6A2A270258290082297C /* ReviewCell.swift in Sources */,
+				A74B974B2704DBA7001F829F /* KolodaVC.swift in Sources */,
 				A7BC6A202701F5870082297C /* CategoryCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

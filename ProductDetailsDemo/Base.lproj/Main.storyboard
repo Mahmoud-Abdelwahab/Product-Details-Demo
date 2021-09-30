@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="igJ-m7-dY1">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="h15-3y-jJ2">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
@@ -287,6 +287,63 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GWy-q2-0nH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-455.07246376811599" y="-183.48214285714286"/>
+        </scene>
+        <!--KolodaVC-->
+        <scene sceneID="9lH-hx-MYW">
+            <objects>
+                <viewController id="h15-3y-jJ2" customClass="KolodaVC" customModule="ProductDetailsDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="SXM-G6-gaT">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4un-6F-Fs7" customClass="KolodaView" customModule="Koloda">
+                                <rect key="frame" x="60" y="47" width="294" height="300"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="300" id="Bu2-nm-r54"/>
+                                </constraints>
+                            </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="110" translatesAutoresizingMaskIntoConstraints="NO" id="2RH-PE-KOa">
+                                <rect key="frame" x="20" y="407" width="374" height="31"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nb9-R3-2J6">
+                                        <rect key="frame" x="0.0" y="0.0" width="132" height="31"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Prev"/>
+                                        <connections>
+                                            <action selector="didTapPrevBtn:" destination="h15-3y-jJ2" eventType="touchUpInside" id="VuK-n7-f33"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qqs-TT-cSb">
+                                        <rect key="frame" x="242" y="0.0" width="132" height="31"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Next"/>
+                                        <connections>
+                                            <action selector="didTapNextBtn:" destination="h15-3y-jJ2" eventType="touchUpInside" id="hhE-qu-Pxh"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="l3G-pr-CNp"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="2RH-PE-KOa" firstAttribute="top" secondItem="4un-6F-Fs7" secondAttribute="bottom" constant="60" id="Otb-fV-ktO"/>
+                            <constraint firstItem="2RH-PE-KOa" firstAttribute="leading" secondItem="l3G-pr-CNp" secondAttribute="leading" constant="20" id="PEl-TW-mLL"/>
+                            <constraint firstItem="4un-6F-Fs7" firstAttribute="top" secondItem="SXM-G6-gaT" secondAttribute="top" constant="47" id="Roo-fM-NUm"/>
+                            <constraint firstItem="l3G-pr-CNp" firstAttribute="trailing" secondItem="4un-6F-Fs7" secondAttribute="trailing" constant="60" id="Za3-J8-ksB"/>
+                            <constraint firstItem="4un-6F-Fs7" firstAttribute="leading" secondItem="l3G-pr-CNp" secondAttribute="leading" constant="60" id="gGb-tQ-hLx"/>
+                            <constraint firstItem="l3G-pr-CNp" firstAttribute="trailing" secondItem="2RH-PE-KOa" secondAttribute="trailing" constant="20" id="jPw-Op-HvN"/>
+                        </constraints>
+                    </view>
+                    <size key="freeformSize" width="414" height="896"/>
+                    <connections>
+                        <outlet property="kolodaView" destination="4un-6F-Fs7" id="OCS-78-fPf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6tk-7A-06E" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="469.56521739130437" y="-269.19642857142856"/>
         </scene>
     </scenes>
     <resources>
