@@ -27,7 +27,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="100"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Mvj-ad-fnm">
-                                        <rect key="frame" x="65" y="49" width="339" height="30"/>
+                                        <rect key="frame" x="65" y="56.5" width="339" height="30"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Galaxy pefume for Men's only hahaha" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dub-NJ-Xkf">
                                                 <rect key="frame" x="0.0" y="0.0" width="242" height="30"/>
@@ -59,7 +59,6 @@
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstItem="Mvj-ad-fnm" firstAttribute="top" secondItem="T7z-uP-o5e" secondAttribute="top" constant="49" id="78q-Dn-W9w"/>
                                     <constraint firstItem="Mvj-ad-fnm" firstAttribute="leading" secondItem="T7z-uP-o5e" secondAttribute="leading" constant="65" id="LNT-bT-CqQ"/>
                                     <constraint firstAttribute="height" constant="100" id="PTd-ic-KmW"/>
                                     <constraint firstAttribute="trailing" secondItem="Mvj-ad-fnm" secondAttribute="trailing" constant="10" id="Qnd-AX-2Qs"/>
@@ -255,6 +254,7 @@
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="k0V-0b-5wl" firstAttribute="leading" secondItem="zZc-85-1eN" secondAttribute="leading" id="1A4-Cq-XZx"/>
+                            <constraint firstItem="Mvj-ad-fnm" firstAttribute="centerY" secondItem="C3D-Pq-sE2" secondAttribute="centerY" id="6sa-Ug-a4P"/>
                             <constraint firstItem="k0V-0b-5wl" firstAttribute="trailing" secondItem="zZc-85-1eN" secondAttribute="trailing" id="9GL-ft-XG4"/>
                             <constraint firstItem="A48-fG-r0f" firstAttribute="trailing" secondItem="zZc-85-1eN" secondAttribute="trailing" id="BV6-17-dCC"/>
                             <constraint firstItem="zZc-85-1eN" firstAttribute="trailing" secondItem="T7z-uP-o5e" secondAttribute="trailing" id="BpU-Pw-Vhw"/>
